@@ -1,0 +1,13 @@
+{
+  "feature_dim": 512,
+  "n_samples": 10000,
+  "n_classes": 10,
+  "lambda_reg": 0.1,
+  "sigma_min_sq": 120.4,
+  "sigma_min": 10.97,
+  "sensory_drift_max": 8.41,
+  "lipschitz_L_emp": 0.4865,
+  "tv_drift_bound": 0.0349,
+  "theoretical_floor": 0.9151,
+  "method": "Signal-subspace Mahalanobis resolvent norm computed on layer-4 pooled features from canonical_cifar10_smr.pt"
+}

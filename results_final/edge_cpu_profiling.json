@@ -1,0 +1,24 @@
+{
+  "benchmark": "Dual-Thread Constrained Edge CPU Benchmark",
+  "cpu_threads": 2,
+  "batch_size": 16,
+  "smr": {
+    "batch_latency_ms": 36.36,
+    "latency_std_ms": 1.3,
+    "throughput_samples_per_sec": 440.0,
+    "peak_rss_mb": 638.7,
+    "replay_traffic_mb": 0.0
+  },
+  "der_plus_plus": {
+    "batch_latency_ms": 74.25,
+    "latency_std_ms": 3.99,
+    "throughput_samples_per_sec": 215.5,
+    "peak_rss_mb": 667.2,
+    "replay_traffic_mb": 1.578
+  },
+  "comparison": {
+    "latency_speedup": 2.04,
+    "throughput_advantage_ratio": 2.04,
+    "rss_overhead_der_pct": 4.5
+  }
+}

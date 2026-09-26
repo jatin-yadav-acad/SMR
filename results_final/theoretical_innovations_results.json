@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-09-22 09:35:22",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 5070 Ti",
+  "innovations": {
+    "bures_wasserstein": {
+      "w2_initial": 9.313005447387695,
+      "w2_terminal": 5.635191440582275,
+      "w2_reduction_ratio": 1.652651071548462,
+      "empirical_decay_factor": 0.605088385953008,
+      "theoretical_decay_bound": 0.12157665459056935,
+      "w2_trajectory_first_5": [
+        9.313005447387695,
+        8.929957389831543,
+        8.583874702453613,
+        8.260977745056152,
+        7.954178333282471,
+        7.6958112716674805
+      ],
+      "w2_trajectory_last_5": [
+        5.9551167488098145,
+        5.854654788970947,
+        5.775345325469971,
+        5.695940017700195,
+        5.635191440582275
+      ]
+    },
+    "grassmannian_routing": {
+      "num_tasks": 5,
+      "subspace_dimension_r": 16,
+      "ambient_dimension_d": 256,
+      "min_canonical_angle_deg": 1.2659409848291903,
+      "mean_canonical_angle_deg": 2.6120577717046047,
+      "nc_theoretical_lower_bound_deg": 60.00000000000001,
+      "nc_bound_satisfied": false,
+      "canonical_angles_sample_pairs": [
+        {
+          "pair": [
+            0,
+            1
+          ],
+          "angle_deg": 2.723473685075704
+        },
+        {
+          "pair": [
+            0,
+            4
+          ],
+          "angle_deg": 1.747644665077688
+        }
+      ],
+      "grassmannian_routing_accuracy": 20.0,
+      "decision_stage_min_canonical_angle_deg": 72.04135196881779,
+      "decision_stage_mean_canonical_angle_deg": 77.25883375502865,
+      "decision_stage_nc_bound_satisfied": true
+    },
+    "random_matrix_theory": {
+      "aspect_ratio_gamma": 0.5,
+      "empirical_sigma": 0.13458120822906494,
+      "marchenko_pastur_lambda_minus": 0.0015537726749207366,
+      "marchenko_pastur_lambda_plus": 0.05278253215026407,
+      "critical_shift_threshold": 0.0,
+      "active_fraction_uncalibrated_shift_neg2": 0.0,
+      "active_fraction_calibrated_zero_shift": 8.769798278808594,
+      "effective_rank_zero_shift": 42.28041529950058,
+      "effective_rank_clamped_shift": 1.0,
+      "clamping_suppression_ratio": 42.280373019127566
+    },
+    "ntk_decoupling": {
+      "decision_mask_overlap_coordinates": 0,
+      "decision_cross_kernel_frobenius": 0.0,
+      "decision_kernel_orthogonality_exact": true,
+      "sensory_cross_kernel_raw": 360.49017333984375,
+      "sensory_cross_kernel_null_projected": -4.9233436584472656e-05,
+      "sensory_cross_kernel_suppression_ratio": 7322059.783482108
+    },
+    "pac_bayesian": {
+      "num_tasks": 5,
+      "sample_size_per_task": 10000,
+      "confidence_delta": 0.05,
+      "kl_divergence_per_task": [
+        2702408.1222470957,
+        2701051.8341954905,
+        2699710.846513148,
+        2698445.844548579,
+        2697211.455911036
+      ],
+      "cumulative_kl_divergence": 13498828.10341535,
+      "pac_bayes_generalization_bound_per_task": [
+        11.624148175880967,
+        11.621230847558985,
+        11.618345709615436,
+        11.615623398247335,
+        11.61296635223033
+      ],
+      "mean_pac_bayes_bound": 11.618462896706612,
+      "orthogonal_kl_decomposition_verified": true
+    },
+    "conformal_prediction": {
+      "target_error_alpha": 0.05,
+      "theoretical_coverage_guarantee": 95.0,
+      "empirical_coverage_rate": 99.7125,
+      "mean_candidate_set_size": 4.940375,
+      "top2_candidate_coverage_rate": 25.6125,
+      "conformal_quantile_q_alpha": 8.803872108459473,
+      "coverage_guarantee_satisfied": true
+    },
+    "lyapunov_stability": {
+      "lyapunov_energy_null_space_final": 0.0037094189319759607,
+      "lyapunov_energy_unprojected_final": 52.215521812438965,
+      "stability_advantage_ratio": 14076.431377976149,
+      "max_forward_difference_delta_v": 0.007411599159240723,
+      "asymptotic_stability_guaranteed": true
+    }
+  }
+}

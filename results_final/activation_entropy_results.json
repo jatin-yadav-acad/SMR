@@ -1,0 +1,194 @@
+{
+  "timestamp": "2026-09-19 12:44:04",
+  "device": "cuda",
+  "layers": [
+    "conv1",
+    "layer1",
+    "layer2",
+    "layer3",
+    "layer4"
+  ],
+  "accuracies": {
+    "dense": 98.45,
+    "uncalibrated": 63.1,
+    "recalibrated_smr": 95.19999999999999
+  },
+  "dense_model": {
+    "conv1": {
+      "D_l": 64,
+      "mean_entropy_bits": 0.9882268905639648,
+      "active_channel_entropy_bits": 0.9882268905639648,
+      "mean_p": 0.48709338903427124,
+      "std_p": 0.062403254210948944,
+      "clamped_channels": 0,
+      "active_channels": 64
+    },
+    "layer1": {
+      "D_l": 64,
+      "mean_entropy_bits": 0.8821765184402466,
+      "active_channel_entropy_bits": 0.8821765184402466,
+      "mean_p": 0.6649489998817444,
+      "std_p": 0.10776519030332565,
+      "clamped_channels": 0,
+      "active_channels": 64
+    },
+    "layer2": {
+      "D_l": 128,
+      "mean_entropy_bits": 0.9258837699890137,
+      "active_channel_entropy_bits": 0.9258837699890137,
+      "mean_p": 0.6425957679748535,
+      "std_p": 0.06819276511669159,
+      "clamped_channels": 0,
+      "active_channels": 128
+    },
+    "layer3": {
+      "D_l": 256,
+      "mean_entropy_bits": 0.9445327520370483,
+      "active_channel_entropy_bits": 0.9445327520370483,
+      "mean_p": 0.6272876858711243,
+      "std_p": 0.051513317972421646,
+      "clamped_channels": 0,
+      "active_channels": 256
+    },
+    "layer4": {
+      "D_l": 512,
+      "mean_entropy_bits": 0.9399521946907043,
+      "active_channel_entropy_bits": 0.9399521946907043,
+      "mean_p": 0.6264744400978088,
+      "std_p": 0.06607001274824142,
+      "clamped_channels": 0,
+      "active_channels": 512
+    }
+  },
+  "uncalibrated_pruned": {
+    "conv1": {
+      "D_l": 64,
+      "mean_entropy_bits": 0.9882268905639648,
+      "active_channel_entropy_bits": 0.9882268905639648,
+      "mean_p": 0.48709338903427124,
+      "std_p": 0.062403254210948944,
+      "clamped_channels": 0,
+      "active_channels": 64
+    },
+    "layer1": {
+      "D_l": 64,
+      "mean_entropy_bits": 0.8821765184402466,
+      "active_channel_entropy_bits": 0.8821765184402466,
+      "mean_p": 0.6649489998817444,
+      "std_p": 0.10776519030332565,
+      "clamped_channels": 0,
+      "active_channels": 64
+    },
+    "layer2": {
+      "D_l": 128,
+      "mean_entropy_bits": 0.9258837699890137,
+      "active_channel_entropy_bits": 0.9258837699890137,
+      "mean_p": 0.6425957679748535,
+      "std_p": 0.06819276511669159,
+      "clamped_channels": 0,
+      "active_channels": 128
+    },
+    "layer3": {
+      "D_l": 256,
+      "mean_entropy_bits": 0.9445327520370483,
+      "active_channel_entropy_bits": 0.9445327520370483,
+      "mean_p": 0.6272876858711243,
+      "std_p": 0.051513317972421646,
+      "clamped_channels": 0,
+      "active_channels": 256
+    },
+    "layer4": {
+      "D_l": 512,
+      "mean_entropy_bits": 0.1392233520746231,
+      "active_channel_entropy_bits": 0.6965816617012024,
+      "mean_p": 0.10893090814352036,
+      "std_p": 0.25326746702194214,
+      "clamped_channels": 410,
+      "active_channels": 87
+    }
+  },
+  "recalibrated_smr": {
+    "conv1": {
+      "D_l": 64,
+      "mean_entropy_bits": 0.9892266988754272,
+      "active_channel_entropy_bits": 0.9892266988754272,
+      "mean_p": 0.48792314529418945,
+      "std_p": 0.059760041534900665,
+      "clamped_channels": 0,
+      "active_channels": 64
+    },
+    "layer1": {
+      "D_l": 64,
+      "mean_entropy_bits": 0.8829773664474487,
+      "active_channel_entropy_bits": 0.8829773664474487,
+      "mean_p": 0.6650946140289307,
+      "std_p": 0.10639569908380508,
+      "clamped_channels": 0,
+      "active_channels": 64
+    },
+    "layer2": {
+      "D_l": 128,
+      "mean_entropy_bits": 0.9273146390914917,
+      "active_channel_entropy_bits": 0.9273146390914917,
+      "mean_p": 0.6415655612945557,
+      "std_p": 0.06691012531518936,
+      "clamped_channels": 0,
+      "active_channels": 128
+    },
+    "layer3": {
+      "D_l": 256,
+      "mean_entropy_bits": 0.9445425271987915,
+      "active_channel_entropy_bits": 0.9445425271987915,
+      "mean_p": 0.6272153258323669,
+      "std_p": 0.051660120487213135,
+      "clamped_channels": 0,
+      "active_channels": 256
+    },
+    "layer4": {
+      "D_l": 512,
+      "mean_entropy_bits": 0.21672990918159485,
+      "active_channel_entropy_bits": 0.9484249949455261,
+      "mean_p": 0.10997997969388962,
+      "std_p": 0.2112245410680771,
+      "clamped_channels": 395,
+      "active_channels": 117
+    }
+  },
+  "summary_table": [
+    {
+      "layer": "conv1",
+      "dense_entropy_bits": 0.9882268905639648,
+      "uncalibrated_entropy_bits": 0.9882268905639648,
+      "recalibrated_entropy_bits": 0.9892266988754272,
+      "delta_entropy_restored": 0.0009998083114624023
+    },
+    {
+      "layer": "layer1",
+      "dense_entropy_bits": 0.8821765184402466,
+      "uncalibrated_entropy_bits": 0.8821765184402466,
+      "recalibrated_entropy_bits": 0.8829773664474487,
+      "delta_entropy_restored": 0.0008008480072021484
+    },
+    {
+      "layer": "layer2",
+      "dense_entropy_bits": 0.9258837699890137,
+      "uncalibrated_entropy_bits": 0.9258837699890137,
+      "recalibrated_entropy_bits": 0.9273146390914917,
+      "delta_entropy_restored": 0.0014308691024780273
+    },
+    {
+      "layer": "layer3",
+      "dense_entropy_bits": 0.9445327520370483,
+      "uncalibrated_entropy_bits": 0.9445327520370483,
+      "recalibrated_entropy_bits": 0.9445425271987915,
+      "delta_entropy_restored": 9.775161743164062e-06
+    },
+    {
+      "layer": "layer4",
+      "dense_entropy_bits": 0.9399521946907043,
+      "uncalibrated_entropy_bits": 0.1392233520746231,
+      "recalibrated_entropy_bits": 0.21672990918159485,
+      "delta_entropy_restored": 0.07750655710697174
+    }
+  ]
+}

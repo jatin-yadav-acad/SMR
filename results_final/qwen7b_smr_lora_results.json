@@ -1,0 +1,69 @@
+{
+  "model": "Qwen2.5-7B",
+  "total_parameters": 7615616512,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 5070 Ti",
+  "peak_vram_gb": 40.27908754348755,
+  "sequential_lora": {
+    "AA": 0.5833333333333334,
+    "FM": 0.012500000000000011,
+    "task_accs": [
+      [
+        0.665,
+        0.0,
+        0.0
+      ],
+      [
+        0.14,
+        0.35,
+        0.0
+      ],
+      [
+        0.64,
+        0.35,
+        0.76
+      ]
+    ],
+    "terminal_accs": [
+      0.64,
+      0.35,
+      0.76
+    ],
+    "tuned_params_per_task": 12845056,
+    "pct_tuned": 0.16866731998595914,
+    "execution_time_s": 5516.524344444275
+  },
+  "smr_lora": {
+    "AA": 0.7216666666666667,
+    "FM": 0.0,
+    "task_accs": [
+      [
+        0.76,
+        0.0,
+        0.0
+      ],
+      [
+        0.76,
+        0.565,
+        0.0
+      ],
+      [
+        0.76,
+        0.565,
+        0.84
+      ]
+    ],
+    "terminal_accs": [
+      0.76,
+      0.565,
+      0.84
+    ],
+    "tuned_params_per_task": 3211264,
+    "pct_tuned": 0.042166829996489784,
+    "execution_time_s": 8693.285118818283
+  },
+  "continual_delta": {
+    "AA_gain": 0.1383333333333333,
+    "FM_reduction": 0.012500000000000011
+  }
+}

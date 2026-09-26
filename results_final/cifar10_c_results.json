@@ -1,0 +1,124 @@
+{
+  "smr": {
+    "gaussian_noise": 0.7423,
+    "shot_noise": 0.7647999999999999,
+    "impulse_noise": 0.7579,
+    "speckle_noise": 0.7792,
+    "defocus_blur": 0.7699999999999999,
+    "glass_blur": 0.7314999999999999,
+    "motion_blur": 0.7344,
+    "zoom_blur": 0.7452,
+    "gaussian_blur": 0.742,
+    "snow": 0.7661,
+    "frost": 0.7384,
+    "fog": 0.751,
+    "brightness": 0.8061,
+    "spatter": 0.7686999999999999,
+    "contrast": 0.6782999999999999,
+    "elastic_transform": 0.7624000000000001,
+    "pixelate": 0.7943,
+    "jpeg_compression": 0.7926,
+    "saturate": 0.8096
+  },
+  "replay": {
+    "gaussian_noise": 0.7737,
+    "shot_noise": 0.7904,
+    "impulse_noise": 0.7695000000000001,
+    "speckle_noise": 0.7985,
+    "defocus_blur": 0.8003,
+    "glass_blur": 0.7950000000000002,
+    "motion_blur": 0.7572,
+    "zoom_blur": 0.7829,
+    "gaussian_blur": 0.784,
+    "snow": 0.7649000000000001,
+    "frost": 0.7809,
+    "fog": 0.8017,
+    "brightness": 0.8143,
+    "spatter": 0.7626,
+    "contrast": 0.7485999999999999,
+    "elastic_transform": 0.7910999999999999,
+    "pixelate": 0.8213000000000001,
+    "jpeg_compression": 0.8128,
+    "saturate": 0.8225999999999999
+  },
+  "ewc": {
+    "gaussian_noise": 0.5,
+    "shot_noise": 0.5,
+    "impulse_noise": 0.5,
+    "speckle_noise": 0.5,
+    "defocus_blur": 0.5,
+    "glass_blur": 0.5,
+    "motion_blur": 0.5,
+    "zoom_blur": 0.5,
+    "gaussian_blur": 0.5,
+    "snow": 0.5,
+    "frost": 0.5,
+    "fog": 0.5,
+    "brightness": 0.5,
+    "spatter": 0.5,
+    "contrast": 0.5,
+    "elastic_transform": 0.5,
+    "pixelate": 0.5,
+    "jpeg_compression": 0.5,
+    "saturate": 0.5
+  },
+  "finetune": {
+    "gaussian_noise": 0.5810000000000001,
+    "shot_noise": 0.5846,
+    "impulse_noise": 0.5849,
+    "speckle_noise": 0.5860000000000001,
+    "defocus_blur": 0.595,
+    "glass_blur": 0.5676,
+    "motion_blur": 0.5795,
+    "zoom_blur": 0.5919000000000001,
+    "gaussian_blur": 0.5936,
+    "snow": 0.5879,
+    "frost": 0.5777,
+    "fog": 0.5915,
+    "brightness": 0.5948,
+    "spatter": 0.5866,
+    "contrast": 0.5789,
+    "elastic_transform": 0.5944,
+    "pixelate": 0.5953,
+    "jpeg_compression": 0.593,
+    "saturate": 0.5942000000000001
+  },
+  "summary": {
+    "smr": {
+      "overall_mCA": 0.7597263157894737,
+      "by_category": {
+        "Noise": 0.7610499999999999,
+        "Blur": 0.7446200000000001,
+        "Weather": 0.7660600000000001,
+        "Digital": 0.7674400000000001
+      }
+    },
+    "replay": {
+      "overall_mCA": 0.7880157894736841,
+      "by_category": {
+        "Noise": 0.7830250000000001,
+        "Blur": 0.7838800000000001,
+        "Weather": 0.78488,
+        "Digital": 0.79928
+      }
+    },
+    "ewc": {
+      "overall_mCA": 0.5,
+      "by_category": {
+        "Noise": 0.5,
+        "Blur": 0.5,
+        "Weather": 0.5,
+        "Digital": 0.5
+      }
+    },
+    "finetune": {
+      "overall_mCA": 0.5872842105263159,
+      "by_category": {
+        "Noise": 0.584125,
+        "Blur": 0.5855199999999999,
+        "Weather": 0.5876999999999999,
+        "Digital": 0.59116
+      }
+    }
+  }
+}

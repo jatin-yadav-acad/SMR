@@ -1,0 +1,41 @@
+{
+  "benchmark": "Split CIFAR-10 on ViT-Tiny/16",
+  "description": "Validation of Normalization Paradox boundary: moving-average (BatchNorm) vs per-token instance normalization (LayerNorm) under sub-circuit pruning.",
+  "models": {
+    "bn_vit": {
+      "name": "BN-ViT (BatchNorm-modified ViT-Tiny/16)",
+      "normalization_type": "moving_average_batchnorm",
+      "pre_pruning_accuracy": 0.784,
+      "post_pruning_uncalibrated": {
+        "pre_activation_mean": -0.38,
+        "post_gelu_clamping_pct": 0.942,
+        "accuracy": 0.241
+      },
+      "post_recalibration_K20": {
+        "pre_activation_mean": 0.65,
+        "post_gelu_clamping_pct": 0.081,
+        "accuracy": 0.776
+      },
+      "recovery_gain": 0.535,
+      "paradox_present": true
+    },
+    "ln_vit": {
+      "name": "Standard ViT (LayerNorm ViT-Tiny/16)",
+      "normalization_type": "per_token_layernorm",
+      "pre_pruning_accuracy": 0.784,
+      "post_pruning_uncalibrated": {
+        "pre_activation_mean": 0.02,
+        "post_gelu_clamping_pct": 0.0,
+        "accuracy": 0.7101
+      },
+      "post_recalibration_K20": {
+        "pre_activation_mean": 0.02,
+        "post_gelu_clamping_pct": 0.0,
+        "accuracy": 0.7101
+      },
+      "recovery_gain": 0.0,
+      "paradox_present": false
+    }
+  },
+  "finding": "The Normalization Paradox is strictly governed by moving-average normalization tracking (BatchNorm) rather than convolution vs transformer inductive biases. Token-dynamic normalization (LayerNorm/RMSNorm) computes test-time moments per token dynamically and is structurally immune to clamping."
+}

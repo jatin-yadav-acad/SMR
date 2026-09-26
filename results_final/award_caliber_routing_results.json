@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-09-22 08:05:17",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 5070 Ti",
+  "benchmarks": {
+    "split_cifar10": {
+      "task_il_oracle_acc": 65.64,
+      "forgetting_measure": 0.0,
+      "sensory_drift_percent": [
+        {
+          "task": 1,
+          "mean_drift_percent": 33.460456132888794
+        },
+        {
+          "task": 2,
+          "mean_drift_percent": 28.775794059038162
+        },
+        {
+          "task": 3,
+          "mean_drift_percent": 31.882674992084503
+        },
+        {
+          "task": 4,
+          "mean_drift_percent": 30.541306734085083
+        }
+      ],
+      "routing_and_class_il": {
+        "num_tasks": 5,
+        "total_test_samples": 10000,
+        "single_centroid_routing_acc": 24.15,
+        "multi_proto_top1_routing_acc": 29.73,
+        "conformal_top2_coverage_rate": 51.92,
+        "single_centroid_class_il_acc": 15.58,
+        "multi_proto_top1_class_il_acc": 20.93,
+        "conformal_fusion_class_il_acc": 20.150000000000002,
+        "latency_per_sample_ms": 0.4297041654586792,
+        "speedup_vs_full_ot": 2.5
+      }
+    },
+    "split_cifar100": {
+      "task_il_oracle_acc": 14.91,
+      "forgetting_measure": 0.0,
+      "sensory_drift_percent": [
+        {
+          "task": 1,
+          "mean_drift_percent": 40.51504731178284
+        },
+        {
+          "task": 2,
+          "mean_drift_percent": 33.47439467906952
+        },
+        {
+          "task": 3,
+          "mean_drift_percent": 31.361704071362812
+        },
+        {
+          "task": 4,
+          "mean_drift_percent": 21.824084781110287
+        },
+        {
+          "task": 5,
+          "mean_drift_percent": 20.246794670820236
+        },
+        {
+          "task": 6,
+          "mean_drift_percent": 21.08449091513952
+        },
+        {
+          "task": 7,
+          "mean_drift_percent": 19.791194477251597
+        },
+        {
+          "task": 8,
+          "mean_drift_percent": 19.787429552525282
+        },
+        {
+          "task": 9,
+          "mean_drift_percent": 16.445400234725742
+        }
+      ],
+      "routing_and_class_il": {
+        "num_tasks": 10,
+        "total_test_samples": 10000,
+        "single_centroid_routing_acc": 8.64,
+        "multi_proto_top1_routing_acc": 15.049999999999999,
+        "conformal_top2_coverage_rate": 27.29,
+        "single_centroid_class_il_acc": 2.29,
+        "multi_proto_top1_class_il_acc": 2.91,
+        "conformal_fusion_class_il_acc": 3.05,
+        "latency_per_sample_ms": 0.5411040306091308,
+        "speedup_vs_full_ot": 5.0
+      }
+    }
+  }
+}

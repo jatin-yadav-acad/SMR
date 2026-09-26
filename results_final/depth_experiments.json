@@ -1,0 +1,227 @@
+{
+  "timestamp": "2026-09-12 19:35:03",
+  "device": "cuda",
+  "elapsed_seconds": 646.5461642742157,
+  "recalibration_k_sweep": [
+    {
+      "K_micro_batches": 0,
+      "N_samples": 0,
+      "accuracy": 94.0,
+      "negative_clamped_pct": 12.852764129638672,
+      "mean_activation": -0.07603856176137924,
+      "std_activation": 0.26170167326927185
+    },
+    {
+      "K_micro_batches": 1,
+      "N_samples": 128,
+      "accuracy": 94.65,
+      "negative_clamped_pct": 12.82205581665039,
+      "mean_activation": -0.07260764390230179,
+      "std_activation": 0.25055673718452454
+    },
+    {
+      "K_micro_batches": 2,
+      "N_samples": 256,
+      "accuracy": 94.65,
+      "negative_clamped_pct": 12.775020599365233,
+      "mean_activation": -0.06933984905481339,
+      "std_activation": 0.24052363634109497
+    },
+    {
+      "K_micro_batches": 5,
+      "N_samples": 640,
+      "accuracy": 95.95,
+      "negative_clamped_pct": 12.595272064208984,
+      "mean_activation": -0.06030220910906792,
+      "std_activation": 0.21316391229629517
+    },
+    {
+      "K_micro_batches": 10,
+      "N_samples": 1280,
+      "accuracy": 97.2,
+      "negative_clamped_pct": 12.011528015136719,
+      "mean_activation": -0.04732046648859978,
+      "std_activation": 0.18163728713989258
+    },
+    {
+      "K_micro_batches": 20,
+      "N_samples": 2560,
+      "accuracy": 97.7,
+      "negative_clamped_pct": 9.738311767578125,
+      "mean_activation": -0.026461714878678322,
+      "std_activation": 0.19799962639808655
+    },
+    {
+      "K_micro_batches": 30,
+      "N_samples": 3840,
+      "accuracy": 97.75,
+      "negative_clamped_pct": 8.40667724609375,
+      "mean_activation": -0.010903475806117058,
+      "std_activation": 0.28907835483551025
+    },
+    {
+      "K_micro_batches": 50,
+      "N_samples": 6400,
+      "accuracy": 97.8,
+      "negative_clamped_pct": 7.746906280517578,
+      "mean_activation": 0.0019188184523954988,
+      "std_activation": 0.3993310332298279
+    }
+  ],
+  "dense_baseline_acc": 98.1,
+  "layerwise_clamping_profile": [
+    {
+      "layer": "layer1",
+      "dense_neg_pct": 48.67505073547363,
+      "uncal_neg_pct": 4.371850490570068,
+      "recal_neg_pct": 7.278254032135009,
+      "uncal_acc": 53.15,
+      "recal_acc": 88.85
+    },
+    {
+      "layer": "layer2",
+      "dense_neg_pct": 44.866509437561035,
+      "uncal_neg_pct": 3.911643028259278,
+      "recal_neg_pct": 6.499452590942383,
+      "uncal_acc": 50.0,
+      "recal_acc": 74.5
+    },
+    {
+      "layer": "layer3",
+      "dense_neg_pct": 47.79973030090332,
+      "uncal_neg_pct": 4.956941604614258,
+      "recal_neg_pct": 7.374134063720702,
+      "uncal_acc": 50.05,
+      "recal_acc": 88.64999999999999
+    },
+    {
+      "layer": "layer4",
+      "dense_neg_pct": 79.10623550415039,
+      "uncal_neg_pct": 13.517074584960936,
+      "recal_neg_pct": 10.216217041015625,
+      "uncal_acc": 93.95,
+      "recal_acc": 97.7
+    }
+  ],
+  "capacity_sparsity_sweep": [
+    {
+      "rho": 0.05,
+      "prune_pct": 95.0,
+      "T_max_theoretical": 20,
+      "final_AA": 92.88000000000001,
+      "task_accs": [
+        89.0,
+        87.64999999999999,
+        93.7,
+        97.15,
+        96.89999999999999
+      ]
+    },
+    {
+      "rho": 0.1,
+      "prune_pct": 90.0,
+      "T_max_theoretical": 10,
+      "final_AA": 94.13,
+      "task_accs": [
+        95.19999999999999,
+        87.3,
+        93.85,
+        97.65,
+        96.65
+      ]
+    },
+    {
+      "rho": 0.15,
+      "prune_pct": 85.0,
+      "T_max_theoretical": 6,
+      "final_AA": 93.94,
+      "task_accs": [
+        95.95,
+        86.85000000000001,
+        92.75,
+        97.55,
+        96.6
+      ]
+    },
+    {
+      "rho": 0.2,
+      "prune_pct": 80.0,
+      "T_max_theoretical": 5,
+      "final_AA": 94.13,
+      "task_accs": [
+        95.8,
+        87.15,
+        94.15,
+        97.15,
+        96.39999999999999
+      ]
+    },
+    {
+      "rho": 0.3,
+      "prune_pct": 70.0,
+      "T_max_theoretical": 3,
+      "final_AA": 94.42,
+      "task_accs": [
+        96.25,
+        87.85,
+        94.15,
+        97.7,
+        96.15
+      ]
+    },
+    {
+      "rho": 0.5,
+      "prune_pct": 50.0,
+      "T_max_theoretical": 2,
+      "final_AA": 94.37,
+      "task_accs": [
+        96.85000000000001,
+        87.55,
+        93.65,
+        97.55,
+        96.25
+      ]
+    }
+  ],
+  "class_il_energy_routing": {
+    "task_routing_acc": 48.43,
+    "class_il_acc": 47.97,
+    "confusion_matrix": [
+      [
+        0,
+        76,
+        203,
+        706,
+        1015
+      ],
+      [
+        0,
+        221,
+        411,
+        867,
+        501
+      ],
+      [
+        0,
+        22,
+        1168,
+        560,
+        250
+      ],
+      [
+        0,
+        12,
+        116,
+        1740,
+        132
+      ],
+      [
+        0,
+        10,
+        59,
+        217,
+        1714
+      ]
+    ]
+  }
+}

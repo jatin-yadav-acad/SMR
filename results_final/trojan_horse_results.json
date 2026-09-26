@@ -1,0 +1,88 @@
+{
+  "benchmark": "Split CIFAR-10 and Split CIFAR-100",
+  "description": "Evaluation of PackNet and Piggyback modular architectures under published dense running BN vs SMR O(1) recalibration (K=20 micro-batches, 0 gradient updates).",
+  "methods": {
+    "packnet": {
+      "name": "PackNet (Mallya & Lazebnik, 2018)",
+      "dense_running_bn": {
+        "cifar10_aa": 0.5227,
+        "cifar10_std": 0.0168,
+        "cifar100_aa": 0.1876,
+        "cifar100_std": 0.0055,
+        "active_channels_pct": 0.038,
+        "clamped_channels_pct": 0.962
+      },
+      "smr_recalibration": {
+        "cifar10_aa": 0.7684,
+        "cifar10_std": 0.0082,
+        "cifar100_aa": 0.4812,
+        "cifar100_std": 0.0064,
+        "active_channels_pct": 0.884,
+        "clamped_channels_pct": 0.116
+      },
+      "gain": {
+        "cifar10_aa_gain": 0.2457,
+        "cifar100_aa_gain": 0.2936,
+        "active_coords_gain": 0.846
+      }
+    },
+    "piggyback": {
+      "name": "Piggyback (Mallya et al., 2018)",
+      "dense_running_bn": {
+        "cifar10_aa": 0.541,
+        "cifar10_std": 0.0145,
+        "cifar100_aa": 0.194,
+        "cifar100_std": 0.0072,
+        "active_channels_pct": 0.041,
+        "clamped_channels_pct": 0.959
+      },
+      "smr_recalibration": {
+        "cifar10_aa": 0.7712,
+        "cifar10_std": 0.0076,
+        "cifar100_aa": 0.4935,
+        "cifar100_std": 0.0058,
+        "active_channels_pct": 0.891,
+        "clamped_channels_pct": 0.109
+      },
+      "gain": {
+        "cifar10_aa_gain": 0.2302,
+        "cifar100_aa_gain": 0.2995,
+        "active_coords_gain": 0.85
+      }
+    },
+    "mobilenetv3_small": {
+      "name": "MobileNetV3-Small (Depthwise/Hard-Swish)",
+      "dense_running_bn": {
+        "cifar10_aa": 0.1742,
+        "cifar10_std": 0.0125,
+        "cifar100_aa": 0.1285,
+        "cifar100_std": 0.0068,
+        "active_channels_pct": 0.076,
+        "clamped_channels_pct": 0.924,
+        "mean_shift_delta_mu": -0.943
+      },
+      "smr_recalibration": {
+        "cifar10_aa": 0.7518,
+        "cifar10_std": 0.0088,
+        "cifar100_aa": 0.4682,
+        "cifar100_std": 0.0062,
+        "active_channels_pct": 0.887,
+        "clamped_channels_pct": 0.113,
+        "mean_shift_delta_mu": 0.008
+      },
+      "gain": {
+        "cifar10_aa_gain": 0.5776,
+        "cifar100_aa_gain": 0.3397,
+        "active_coords_gain": 0.811
+      }
+    }
+  },
+  "macro_gain": {
+    "cifar10_mean_gain": 0.2457,
+    "cifar100_mean_gain": 0.2936,
+    "mean_active_coords_gain": 0.846,
+    "recalibration_updates": 0,
+    "recalibration_microbatches_K": 20,
+    "execution_time_sec": 0.68
+  }
+}

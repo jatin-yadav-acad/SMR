@@ -1,0 +1,137 @@
+{
+  "timestamp": "2026-09-19 12:54:18",
+  "severity": 3,
+  "alpha": 0.2,
+  "device": "cuda",
+  "summary": {
+    "overall": {
+      "static_mCA": 0.8018315789473683,
+      "dynamic_mCA": 0.8686052631578947,
+      "absolute_gain": 0.06677368421052633,
+      "relative_gain_pct": 8.327644603145432
+    },
+    "by_category": {
+      "Noise": {
+        "static_mCA": 0.7890499999999999,
+        "dynamic_mCA": 0.8633000000000001,
+        "absolute_gain": 0.07425000000000015,
+        "relative_gain_pct": 9.410050060198994
+      },
+      "Blur": {
+        "static_mCA": 0.79958,
+        "dynamic_mCA": 0.86808,
+        "absolute_gain": 0.0685,
+        "relative_gain_pct": 8.566997673778735
+      },
+      "Weather": {
+        "static_mCA": 0.80106,
+        "dynamic_mCA": 0.8646,
+        "absolute_gain": 0.06354000000000004,
+        "relative_gain_pct": 7.931990113100147
+      },
+      "Digital": {
+        "static_mCA": 0.81508,
+        "dynamic_mCA": 0.8773799999999999,
+        "absolute_gain": 0.06229999999999991,
+        "relative_gain_pct": 7.643421504637571
+      }
+    }
+  },
+  "per_corruption": {
+    "gaussian_noise": {
+      "static_acc": 0.7681,
+      "dynamic_acc": 0.8550000000000001,
+      "delta": 0.08690000000000009
+    },
+    "shot_noise": {
+      "static_acc": 0.8025,
+      "dynamic_acc": 0.8658000000000001,
+      "delta": 0.06330000000000013
+    },
+    "impulse_noise": {
+      "static_acc": 0.7725,
+      "dynamic_acc": 0.8613999999999999,
+      "delta": 0.08889999999999998
+    },
+    "speckle_noise": {
+      "static_acc": 0.8131,
+      "dynamic_acc": 0.8710000000000001,
+      "delta": 0.05790000000000006
+    },
+    "defocus_blur": {
+      "static_acc": 0.8390000000000001,
+      "dynamic_acc": 0.8865999999999999,
+      "delta": 0.047599999999999865
+    },
+    "glass_blur": {
+      "static_acc": 0.7611000000000001,
+      "dynamic_acc": 0.8432000000000001,
+      "delta": 0.08209999999999995
+    },
+    "motion_blur": {
+      "static_acc": 0.7696,
+      "dynamic_acc": 0.8509,
+      "delta": 0.08130000000000004
+    },
+    "zoom_blur": {
+      "static_acc": 0.8112999999999999,
+      "dynamic_acc": 0.8792,
+      "delta": 0.06790000000000007
+    },
+    "gaussian_blur": {
+      "static_acc": 0.8169000000000001,
+      "dynamic_acc": 0.8805,
+      "delta": 0.06359999999999988
+    },
+    "snow": {
+      "static_acc": 0.7917,
+      "dynamic_acc": 0.849,
+      "delta": 0.05730000000000002
+    },
+    "frost": {
+      "static_acc": 0.7796,
+      "dynamic_acc": 0.8593,
+      "delta": 0.0797
+    },
+    "fog": {
+      "static_acc": 0.8001999999999999,
+      "dynamic_acc": 0.8713000000000001,
+      "delta": 0.07110000000000016
+    },
+    "brightness": {
+      "static_acc": 0.8518000000000001,
+      "dynamic_acc": 0.8939,
+      "delta": 0.042099999999999915
+    },
+    "spatter": {
+      "static_acc": 0.782,
+      "dynamic_acc": 0.8494999999999999,
+      "delta": 0.0674999999999999
+    },
+    "contrast": {
+      "static_acc": 0.7027,
+      "dynamic_acc": 0.8638999999999999,
+      "delta": 0.1611999999999999
+    },
+    "elastic_transform": {
+      "static_acc": 0.8261999999999998,
+      "dynamic_acc": 0.8745,
+      "delta": 0.04830000000000023
+    },
+    "pixelate": {
+      "static_acc": 0.8523,
+      "dynamic_acc": 0.8821000000000001,
+      "delta": 0.02980000000000016
+    },
+    "jpeg_compression": {
+      "static_acc": 0.8380000000000001,
+      "dynamic_acc": 0.8731,
+      "delta": 0.03509999999999991
+    },
+    "saturate": {
+      "static_acc": 0.8562,
+      "dynamic_acc": 0.8933,
+      "delta": 0.03710000000000002
+    }
+  }
+}

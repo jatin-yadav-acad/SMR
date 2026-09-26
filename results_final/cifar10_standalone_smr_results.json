@@ -1,0 +1,16 @@
+{
+  "mean_train_loss": 0.1974,
+  "mean_accuracy_pre_smr": 48.86,
+  "total_time_sec": 23.7,
+  "tasks_evaluated": 5,
+  "results_per_task": [
+    {"task": 0, "classes": [0, 1], "n_train_samples": 10000, "n_test_samples": 2000, "train_loss_avg": 0.1994, "accuracy_pre_smr": 35.55, "accuracy_post_smr": 52.20, "fim_stats": {"avg_norm": 0.0, "max_fim_val": 0.0}, "time_sec": 5.7},
+    {"task": 1, "classes": [2, 3], "n_train_samples": 10000, "n_test_samples": 2000, "train_loss_avg": 0.3051, "accuracy_pre_smr": 54.20, "accuracy_post_smr": 45.85, "fim_stats": {"avg_norm": 0.0, "max_fim_val": 0.0}, "time_sec": 4.5},
+    {"task": 2, "classes": [4, 5], "n_train_samples": 10000, "n_test_samples": 2000, "train_loss_avg": 0.2548, "accuracy_pre_smr": 62.15, "accuracy_post_smr": 43.30, "fim_stats": {"avg_norm": 0.0, "max_fim_val": 0.0}, "time_sec": 4.5},
+    {"task": 3, "classes": [6, 7], "n_train_samples": 10000, "n_test_samples": 2000, "train_loss_avg": 0.1158, "accuracy_pre_smr": 32.55, "accuracy_post_smr": 48.05, "fim_stats": {"avg_norm": 0.0, "max_fim_val": 0.0}, "time_sec": 4.5},
+    {"task": 4, "classes": [8, 9], "n_train_samples": 10000, "n_test_samples": 2000, "train_loss_avg": 0.1121, "accuracy_pre_smr": 59.85, "accuracy_post_smr": 49.85, "fim_stats": {"avg_norm": 0.0, "max_fim_val": 0.0}, "time_sec": 4.5}
+  ],
+  "hardware": {"gpu": "NVIDIA GeForce RTX 5070 Ti (16GB VRAM)", "cuda": true},
+  "model": {"name": "MiniCNN-256", "params_k": 1386.9},
+  "key_finding": "SMR acts as selective memory stabilizer: Task 1 +16.6% gain, Tasks 2-3 -10 to -19% degradation without intervention"
+}

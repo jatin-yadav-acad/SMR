@@ -1,0 +1,50 @@
+{
+  "benchmark": "Split CIFAR-10 (ResNet-18, Real SGD Checkpoints)",
+  "task_pairs": [
+    {
+      "source_task": 0,
+      "target_task": 1,
+      "sensory_drift": 7.370209217071533,
+      "functional_drift": 3.5856549739837646,
+      "empirical_lipschitz": 0.4865065384681824,
+      "spectral_bound": 1.6565507277846336,
+      "bound_satisfied": true
+    },
+    {
+      "source_task": 0,
+      "target_task": 2,
+      "sensory_drift": 7.388514041900635,
+      "functional_drift": 3.9930806159973145,
+      "empirical_lipschitz": 0.5404443428478789,
+      "spectral_bound": 1.6565507277846336,
+      "bound_satisfied": true
+    },
+    {
+      "source_task": 0,
+      "target_task": 3,
+      "sensory_drift": 8.409235000610352,
+      "functional_drift": 4.7345733642578125,
+      "empirical_lipschitz": 0.5630206985432292,
+      "spectral_bound": 1.6565507277846336,
+      "bound_satisfied": true
+    },
+    {
+      "source_task": 0,
+      "target_task": 4,
+      "sensory_drift": 6.860224723815918,
+      "functional_drift": 3.4468376636505127,
+      "empirical_lipschitz": 0.5024380107672698,
+      "spectral_bound": 1.6565507277846336,
+      "bound_satisfied": true
+    }
+  ],
+  "overall_bound_satisfied": true,
+  "max_lipschitz_constant": 0.5630206985432292,
+  "mean_sensory_drift": 7.507045745849609,
+  "mean_functional_drift": 3.940036654472351,
+  "sensory_frozen_mode": {
+    "sensory_drift": 0.0,
+    "functional_drift": 0.0,
+    "exact_zero_forgetting": true
+  }
+}

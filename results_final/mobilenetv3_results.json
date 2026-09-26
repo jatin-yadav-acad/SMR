@@ -1,0 +1,33 @@
+{
+  "architecture": "MobileNetV3-Small (Howard et al., 2019)",
+  "features": [
+    "Depthwise-separable convolutions",
+    "Inverted residual bottlenecks",
+    "Squeeze-and-Excitation (SE)",
+    "Hard-Swish activations",
+    "34 BatchNorm2d layers"
+  ],
+  "dense_running_bn": {
+    "cifar10_aa": 0.1742,
+    "cifar10_std": 0.0125,
+    "cifar100_aa": 0.1285,
+    "cifar100_std": 0.0068,
+    "active_channels_pct": 0.076,
+    "clamped_channels_pct": 0.924,
+    "mean_shift_delta_mu": -0.943
+  },
+  "smr_recalibration": {
+    "cifar10_aa": 0.7518,
+    "cifar10_std": 0.0088,
+    "cifar100_aa": 0.4682,
+    "cifar100_std": 0.0062,
+    "active_channels_pct": 0.887,
+    "clamped_channels_pct": 0.113,
+    "mean_shift_delta_mu": 0.008
+  },
+  "gain": {
+    "cifar10_aa_gain": 0.5776,
+    "cifar100_aa_gain": 0.3397,
+    "active_coords_gain": 0.811
+  }
+}
