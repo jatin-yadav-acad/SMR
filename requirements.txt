@@ -1,0 +1,22 @@
+# Sparse Mechanistic Routing (SMR)
+# ICLR / NeurIPS Camera-Ready Production Dependencies
+# Target Environment: Python 3.10+, PyTorch 2.6+, CUDA 12+
+
+# Core Deep Learning Framework
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Numerical Computing & Scientific Libraries
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Visualization & Plotting
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilities & Configuration
+pyyaml>=6.0
+tqdm>=4.65.0
+
+# Automated Verification & Testing
+pytest>=7.0.0
